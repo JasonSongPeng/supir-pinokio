@@ -15,8 +15,11 @@ are downloaded directly from their upstream repositories during installation.
    48.31 GiB; keep at least 65 GiB free for models and temporary data.
 6. Start with **Balanced (FP16/BF16)** or **Low VRAM (FP8)**.
 
-Downloads are resumable. Re-running the model download verifies existing files
-and retrieves only missing content.
+Downloads are power-loss resumable. Re-running the model download preserves
+Hugging Face `.incomplete` data, skips completed files, and retrieves only the
+remaining bytes. Before resuming, the launcher recalculates free-space needs
+from completed files and partial data instead of requiring the original full
+download capacity again.
 
 ## Compatibility
 

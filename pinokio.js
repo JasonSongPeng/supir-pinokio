@@ -1,7 +1,7 @@
 const SOURCE_REVISION = "63b53ddb1773062ef64a4c192707f69d66b24953"
 
 module.exports = {
-  version: "1.0.0",
+  version: "1.0.1",
   title: "SUPIR v100",
   description: "Pinned, privacy-conscious Pinokio launcher for SUPIR photo restoration.",
   menu: async (kernel, info) => {
