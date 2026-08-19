@@ -5,7 +5,7 @@ module.exports = {
   title: "SUPIR v100",
   description: "Pinned, privacy-conscious Pinokio launcher for SUPIR photo restoration.",
   menu: async (kernel, info) => {
-    const installed = info.exists("env") && info.exists("app/gradio_demo.py")
+    const installed = info.exists("app/env") && info.exists("app/gradio_demo.py")
     const modelsReady = [
       "app/models/v0Q.ckpt",
       "app/models/llava-v1.5-7b/config.json",

@@ -6,7 +6,7 @@ module.exports = {
     {
       method: "shell.run",
       params: {
-        venv: "env",
+        venv: "app/env",
         env: {
           DO_NOT_TRACK: "1",
           HF_HUB_DISABLE_TELEMETRY: "1",
