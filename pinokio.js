@@ -90,6 +90,11 @@ module.exports = {
           href: "download-models.js",
         },
         {
+          icon: "fa-solid fa-rotate",
+          text: "Update Launcher",
+          href: "update.js",
+        },
+        {
           icon: "fa-regular fa-circle-xmark",
           text: "Reset",
           href: "reset.js",
